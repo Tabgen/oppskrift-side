@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: rgb(204, 247, 140);
+
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin: 20px;
+    padding-left: 50px;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: -10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.4rem;
+    padding: 5px;
+
+}
+
+nav ul li a:hover {
+    color: rgb(62, 75, 139);
+}
+
+.container {
+    display: flex;
+    max-width: 60%;
+}
+
+.tekst {
+    display: flex;
+    flex-direction: column;
+}
+
+.mcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.tekst img {
+    width: 100%;
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+.tekst h1 {
+    padding: 10px;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.tekst h2 {
+    padding: 5px;
+    padding-bottom: 15px;
+    font-size: 1.5rem
+}
+
+.tekst ol {
+    width: 65%;
+    font-size: 1.2rem;
+
+}
+
+.innhold ol li {
+    padding: 10px;
+}
+
+.ingridienser  {
+    margin-left: 75%; 
+    margin-top: -20%;
+}
+
+.ingridienser h2 {
+    font-size: 28px;
+    margin-left: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    nav ul {
+        width: 100%;
+        background: linear-gradient(to right, rgb(177, 80, 185), #a200ff);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .menu-icon {
+        padding-right: 20px;
+        display: block;
+    }
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .logo {
+        padding-left: 5px;
+    }
+
+}
