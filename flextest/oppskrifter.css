@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    ;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(156, 224, 190);
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+    padding-left: 5%;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    color: rgb(62, 75, 139);
+}
+
+
+.kort {
+    background-color: rgb(35, 36, 92);
+    color: white;
+    padding: 1rem;
+    height: 15rem;
+    filter: grayscale(1%);
+    -webkit-filter: grayscale(40%);
+    -moz-filter: grayscale(40%);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    border-radius: 10px;
+}
+
+.kort h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 13rem;
+}
+
+.kort:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+
+.kort img {
+    width: 1rem;
+    display: block
+}
+
+.kortkonteiner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+#vaffel {
+    background-image: url("https://mills.no/content/uploads/2016/03/Verdens-beste-vafler.jpg");
+    background-size: 30rem 18rem;
+    
+}
+
+#sveler {
+    background-image: url("https://d3vwy6drvvvoki.cloudfront.net/69cafa5b-8159-4a4a-ba14-ec91d2b62c56_Skjermbilde2022-06-14kl.09.28.49.webp");
+    background-size: 30rem 18rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 600px) {
+    .kortkonteiner { grid-template-columns: repeat(2, 1fr); }
+    
+}
+
+@media (min-width: 900px) {
+    .kortkonteiner { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media only screen and (max-width: 700px) {
+    nav ul {
+        width: 100%;
+        background: rgb(128, 216, 128);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .menu-icon {
+        padding-right: 20px;
+        display: block;
+    }
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .logo {
+        padding-left: 5px;
+    }
+
+    .kortkonteiner {padding: 20px;}
+}

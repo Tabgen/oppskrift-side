@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppskrifter</title>
+    <link rel="stylesheet" href="oppskrifter.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="oppskrifter.html">Mat</a></li>
+                    <li><a href="oppskrifter.html">Oppskrifter</a></li>
+                    <li><a href="">Middagstips</a></li>
+                    <li><a href="">Kosthold</a></li>
+                </ul>
+            </nav>
+            <img src="https://cdn-icons-png.flaticon.com/512/56/56763.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </header>
+
+    <div class="kortkonteiner">
+        <a href="index.html"><div class="kort" id="vaffel">  <h1>Vaffler</h1>  </div></a>
+        
+
+        <a href="sveler.html"><div class="kort" id="sveler">  <h1>Sveler</h1>  </div></a>
+            
+      
+        <a><div class="kort">3</div></a>
+        <a><div class="kort">4</div></a>
+        <a><div class="kort">5</div></a>
+        <a><div class="kort">6</div></a>
+        <a><div class="kort">7</div></a>
+        <a><div class="kort">8</div></a>
+        <a><div class="kort">9</div></a>
+        <a><div class="kort">10</div></a>
+        <a><div class="kort">11</div></a>
+        <a><div class="kort">12</div></a>
+    </div>
+
+
+
+
+
+
+    <script>
+        var menuList = document.getElementById("menuList")
+
+        menuList.style.maxHeight = "0px"
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "150px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+
+
+</body>
+</html>
